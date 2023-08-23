@@ -1,0 +1,396 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans' , sans-serif;
+    box-sizing: border-box;
+}
+.one{
+    block-size: 180vh;
+    inline-size: 100%;
+    background-image:url(solar.1.jpg);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     animation: change 20s infinite ease-in-out;
+}
+@keyframes change {
+    0%
+    {
+        background-image: url(solar.7.jpg);
+    }
+    20%
+    {
+        background-image: url(solar.9.jpg);
+    }
+    40%
+    {
+        background-image: url(solar.5.jpg);
+    }
+    60%
+    {
+        background-image: url(solar.6.jpg);
+    }
+    
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    block-size: 600px;
+    inline-size: 400px;
+    border:1px solid rgb(222, 207, 207);
+    align-items: center;
+    margin: auto;
+    margin-block-start: 50px;
+    background-color: rgba(253, 253, 253, 0.2);
+    box-shadow: inset -5px -3px rgba(248, 248, 248, 0.5);
+    border-radius: 28px;
+    font-style: Georgia;
+}
+.form h1{
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+        font-size: 40px;
+        -webkit-text-stroke-color: rgb(0, 0, 0);
+    border-block-end: 4px solid rgba(255, 255, 255, 0.5);
+    box-shadow: inset -5px -5px rgba(237, 230, 230, 0.5);
+   margin: 50px;
+}
+.b1{
+    padding: 12px;
+    margin: 20px;
+    inline-size: 65%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: inset -3px -3px rgba(98, 96, 96, 0.5);
+    color: white;
+    font-size: 1rem;
+}
+
+.but2:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+::placeholder{
+    color: white;
+    opacity:0.7;
+
+} 
+ nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block-start: 45px;
+    padding-inline-end: 8%;
+    padding-inline-start: 8%;
+}
+.logo{
+    color: white;
+    font-size: 45px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+}
+span{
+    color: rgb(138, 51, 173);
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: rgb(138, 51, 173);
+    transition: .4s;
+}
+.button{
+    background-color: rgb(138, 51, 173);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;  
+}
+.button.hover{
+    transform: scale(1.2);
+}
+.content{
+    position: absolute;
+    inset-block-start: 40%;
+    inset-inline-start: 50%;
+    transform: translate(-50%);
+    font-size: 50px;
+    font-style: Georgia;
+}
+h1{
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+    font-style: Georgia;
+}
+h2{
+    color: white;
+    font-size: 30px;
+    line-height: calc(30px +1vw);
+    margin-block-end:  50px; 
+    
+}
+.about-text h2{
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-block-end: 20px;
+}
+.about-text h5{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-block-end: 25px;
+    text-transform: capitalize;
+
+}
+.about-text p{
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-block-end: 45px;
+    font-style: Georgia;
+}
+.service{
+    inline-size: 100%;
+    padding: 100px 0px;
+}
+.title h2{
+    color: rgb(0, 0, 0);
+    font-style:inherit;
+    font-size: 75px;
+    inline-size: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-block-size: 400px;
+}
+.card{
+    block-size: 365px;
+    inline-size: 335px;
+    padding: 20px 35px;
+    background: #178209;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: rgb(9, 0, 13);   
+}
+h5{
+    color: rgb(0, 0, 0);
+    font-size: 23px;
+   
+    margin-block-end: 15px;
+}
+
+.Contact-Us .button-two{
+    background-color: rgb(138, 51, 173) ;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.Contact-us .button-two:hover{
+    background-color: transparent;
+    border: 2px solid rgb(138, 51, 173) ;
+    cursor: pointer;
+}
+footer{
+    position: relative;
+    inline-size: 100%;
+    block-size: 400px;
+    background:rgb(241, 226, 226);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p:nth-child(1){
+    font-size: 30px;
+    color:rgb(27, 26, 26);
+    margin-block-end: 20px; 
+    font-weight: bold;
+}
+footer p:nth-child(2){
+    color:rgb(22, 1, 1);
+    font-size: 17px;
+    inline-size: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+.social{
+    display: flex;
+}
+.social a{
+    inline-size: 45px;
+    block-size: 45px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background: #bd36e7;
+    border-radius:50%;
+    margin: 22px 10px;
+}
+.end{
+    color:rgb(22, 1, 1);
+    text-align: center;
+}
+.repohead h1{
+    font-size: larger;
+    font-weight: bold;
+    font-size: 73px;
+    inline-size: 1130px;
+    margin: 30px auto;
+    text-align: center;
+   
+}
+.reportlogo{
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+.repohead{
+    block-size: 150vh;
+    inline-size: 100%;
+    background-image: url(repo3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #851da5;   
+}
+#button2{
+    display: flex;
+    flex-direction: column;
+    block-size: 40px;
+    inline-size: 150px;
+    border:1px solid rgb(176, 161, 161);
+    align-items: center;
+    margin: auto;
+    margin-block-start: 50px;
+    background-color: rgba(253, 253, 253, 0.2);
+    box-shadow: inset -3px -3px rgba(97, 94, 94, 0.5);
+    border-radius: 28px;
+    font-style: Georgia;
+    margin-block-start: 250px;
+    font-weight: bold;
+}
+.but2{
+    padding: 20px 60px;
+    flex-direction: column;
+    margin-block-start: 50px;
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: inset -3px -3px rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    outline: none;
+    margin: auto;
+    border-radius: 20px;
+    font-size: 1rem;
+   
+}
+#button2:hover{
+    cursor: pointer;
+    background-color: rgba(43, 39, 39, 0.1);
+    color: black;
+}
+.report {
+    font-size: larger;
+    font-weight: bold;
+    font-size: 53px;
+    inline-size: 1130px;
+    margin: 3px auto;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: grey;
+}
+.pra p{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    line-height: 27px;
+    margin-block-end: 25px;
+}
+
+.Contact-us{
+    inline-size: 100%;
+    block-size: 290px;
+    background: #ebdada;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-style: Georgia;
+}
+.Contact-Us p{
+    color: rgb(16, 15, 15);
+    font-size: 30px;
+    font-weight: bold;
+    margin-block-end: 25px;
+}
+.about-section{
+    background-image:url(team.jpeg);
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-color: #ffffff;
+    padding: 50px 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    min-block-size: 80vh;
+    display: flex;
+}
+.inner-container{
+    inline-size: 50%;
+    float: inline-end;
+    background-color: #fdfdfd;
+    padding: 30px ;
+}
+.inner-container h3{
+    font-size: 30px;
+    font-weight:900;
+    margin-block-end: 30px;
+}
+.text{
+    font-size: 15px;
+    color: #2f2d2d;
+    line-height: 30px;
+    text-align: justify;
+    margin-block-end: 35px;
+}
